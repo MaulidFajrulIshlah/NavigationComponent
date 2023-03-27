@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragmentSatu">
+
+    <fragment
+        android:id="@+id/fragmentSatu"
+        android:name="com.geminiboy.navigationcomponent.fragment.FragmentSatu"
+        android:label="fragmentSatu">
+        <action
+            android:id="@+id/action_fragmentSatu_to_fragmentDua"
+            app:destination="@id/fragmentDua" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDua"
+        android:name="com.geminiboy.navigationcomponent.fragment.FragmentDua"
+        android:label="fragmentDua">
+        <action
+            android:id="@+id/action_fragmentDua_to_fragmentTigau"
+            app:destination="@id/fragmentTiga" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTiga"
+        android:name="com.geminiboy.navigationcomponent.fragment.FragmentTiga"
+        android:label="fragmentTiga">
+        <argument
+            android:name="nama"
+            app:argType="string"
+            android:defaultValue="nama" />
+    </fragment>
+
+</navigation>
